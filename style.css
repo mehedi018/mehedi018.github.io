@@ -1,0 +1,184 @@
+/*
+Theme Name: My First WP Theme
+Version: 1.0
+Author:Mehedi Hasan
+Author URI: 
+Description: This is a wordpress theme made for learning purpose
+
+*/
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+*{margin:0;padding:0}
+body{
+	font-family:Sans-Serif, Arial !important; 
+	transition:all 0.5s ease;
+	-webkit-transition:all 0.5s ease;
+	-moz-transition:all 0.5s ease;
+}
+body, html{
+	height:100%;
+}
+img{
+	max-width:100%
+}
+a{
+	text-decoration:none
+}
+a:hover{
+	text-decoration:underline
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+	margin-top:10px;
+	margin-bottom:10px
+}
+p{
+	line-height: 150%;
+	margin-bottom: 2em;
+}
+.container_full {
+	width: 100%;
+	height: auto;
+}
+.container {
+	width:960px; 
+	margin:0 auto; 
+	display:block 
+}
+.fix{
+	overflow:hidden;
+}
+.aligncenter{
+	display:block;
+	margin:0 auto;
+}
+.floatleft{
+	float:left
+}
+.floatright{
+	float:right
+}
+/*-----------------------------------------------------*/
+.body{
+	background:#1C3F67;
+}
+.header{
+	background:url(img/header.png) no-repeat;
+	height: 185px;
+	margin-left: 110px;
+}
+.header h1{
+	    color: #26476E;
+    font-weight: bold;
+    padding-top: 43px;
+    padding-left: 296px;
+
+}
+.header p{
+   padding-left: 166px;
+}
+
+#menu{
+	background:url(img/bar.png) no-repeat;
+	padding:0;
+	list-style-type:none;
+    width: 720px;
+	min-height:56px;
+	margin-top:10px;
+	margin-left:20px;
+	    margin-left: 126px;
+    border-radius: 30px 29px 27px 30px;
+}
+#menu li{
+	display:inline;
+	float:left;
+	position:relative;
+	padding-top:9px;
+}
+
+#menu li:last-child{
+	border-right:none;
+}
+#menu li:first-child{
+	border-left:none;
+    padding-left: 73px;
+}
+#menu li a{
+	text-decoration:none;
+	padding:10px 20px;
+	display:block;
+	transition:0.3s all ease;
+}
+#menu li a:hover{
+	color:black;
+}
+
+
+#menu li ul{
+	list-style-type:none;
+	padding:0;
+	position:absolute;
+	left:-99999px;
+	/*transition:0.5s all ease;*/
+}
+#menu li:hover ul{
+	left:0;
+}
+
+#menu li ul li{
+	float:none;
+	border-right:none;
+	border-left:none;
+	border-top:1px solid #605B5B;
+	border-bottom:1px solid #2B2A2A;	
+	width:200px;
+	position:relative;
+}
+
+#menu li ul li ul{
+	position:absolute;
+	top:-999999px;
+}
+#menu li ul li:hover ul{
+	top:0;
+	left:200px;
+}
+
+.main{
+	width: 720px;
+	margin-left: 140px;
+    margin-top: 27px;
+}
+.main h2{
+	color:white;
+	font-weight:bold;
+}
+.main p{
+	color:white;
+}
+.main a{
+	color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
