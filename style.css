@@ -1,184 +1,192 @@
-/*
-Theme Name: My First WP Theme
-Version: 1.0
-Author:Mehedi Hasan
-Author URI: 
-Description: This is a wordpress theme made for learning purpose
 
-*/
-@import url(http://fonts.googleapis.com/css?family=Oswald);
-*{margin:0;padding:0}
-body{
-	font-family:Sans-Serif, Arial !important; 
-	transition:all 0.5s ease;
-	-webkit-transition:all 0.5s ease;
-	-moz-transition:all 0.5s ease;
+
+html, body {
+text-align: center;
 }
-body, html{
-	height:100%;
+p {text-align: left;}
+
+.body {
+	margin: 0;
+	padding: 0;
+	background:#A4A6E3;
+	text-align: left;
+	font-family: Georgia, Times New Roman, Times, serif;
+	font-size: 13px;
+	color: #F1F5F8;
 }
-img{
-	max-width:100%
+*
+{
+  margin: 0 auto 0 auto;
+ text-align:left;}
+
+
+html, body {
+text-align: center;
 }
-a{
-	text-decoration:none
+p {text-align: left;}
+
+.dotted_line
+{
+background-image:url(img/dotted_line.png);
+background-repeat:no-repeat;
+clear:both;
+width:916px;
+height:5px;
 }
-a:hover{
-	text-decoration:underline
+.img{
+	height:304px;
 }
-h1, h2, h3, h4, h5, h6{
-	font-weight:normal;
-	margin-top:10px;
-	margin-bottom:10px
+
+
+#header
+{
+background-image:url(header.png);
+background-repeat:no-repeat;
+width:921px;
 }
-p{
-	line-height: 150%;
-	margin-bottom: 2em;
+
+
+#header h1
+{
+display:block;
+float:right;
+margin-left:17px;
+color:#FFFFFF;
+text-align:left;
+font-size:28px;
+font-weight:bold;
+font-family:Arial, Helvetica, sans-serif;
+padding-right:20px;
 }
-.container_full {
-	width: 100%;
-	height: auto;
-}
-.container {
-	width:960px; 
-	margin:0 auto; 
-	display:block 
-}
-.fix{
+
+
+#header ul {
+display:block;
+	padding: 0px;
+	list-style-type: none;
 	overflow:hidden;
-}
-.aligncenter{
-	display:block;
-	margin:0 auto;
-}
-.floatleft{
-	float:left
-}
-.floatright{
-	float:right
-}
-/*-----------------------------------------------------*/
-.body{
-	background:#1C3F67;
-}
-.header{
-	background:url(img/header.png) no-repeat;
-	height: 185px;
-	margin-left: 110px;
-}
-.header h1{
-	    color: #26476E;
-    font-weight: bold;
-    padding-top: 43px;
-    padding-left: 296px;
-
-}
-.header p{
-   padding-left: 166px;
-}
-
-#menu{
-	background:url(img/bar.png) no-repeat;
-	padding:0;
-	list-style-type:none;
-    width: 720px;
-	min-height:56px;
-	margin-top:10px;
-	margin-left:20px;
-	    margin-left: 126px;
-    border-radius: 30px 29px 27px 30px;
-}
-#menu li{
-	display:inline;
+	width:650px;
 	float:left;
-	position:relative;
-	padding-top:9px;
 }
-
-#menu li:last-child{
-	border-right:none;
-}
-#menu li:first-child{
-	border-left:none;
-    padding-left: 73px;
-}
-#menu li a{
-	text-decoration:none;
-	padding:10px 20px;
-	display:block;
-	transition:0.3s all ease;
-}
-#menu li a:hover{
-	color:black;
-}
-
-
-#menu li ul{
-	list-style-type:none;
-	padding:0;
-	position:absolute;
-	left:-99999px;
-	/*transition:0.5s all ease;*/
-}
-#menu li:hover ul{
-	left:0;
-}
-
-#menu li ul li{
-	float:none;
-	border-right:none;
-	border-left:none;
-	border-top:1px solid #605B5B;
-	border-bottom:1px solid #2B2A2A;	
-	width:200px;
-	position:relative;
-}
-
-#menu li ul li ul{
-	position:absolute;
-	top:-999999px;
-}
-#menu li ul li:hover ul{
-	top:0;
-	left:200px;
-}
-
-.main{
-	width: 720px;
-	margin-left: 140px;
-    margin-top: 27px;
-}
-.main h2{
-	color:white;
+#header ul li , #header ul li a, #header ul li a:visited{
+	float:left;
+	margin: 0px;
+	text-align:center;
+	line-height:40px;
+	color:#FFFFFF;
+	font-size:16px;
 	font-weight:bold;
-}
-.main p{
-	color:white;
-}
-.main a{
-	color:white;
+	text-decoration:none;
+	padding-left:10px;
+	padding-right:10px;
 }
 
+#header ul li a:hover{
+color:#C9E1FA;
+}
+
+
+
+#main 
+{
+width:916px;
+margin-top:30px;
+margin-bottom:15px;
+}
+
+
+#main .main_left
+{
+width:458px;
+background-image:url(main_top.png);
+background-repeat:no-repeat;
+text-align:center;
+float:left;
+}
+
+#main .main_left h1
+{
+padding-top:20px;
+padding-left:40px;
+color:#FFFFFF;
+font-size:28px;
+}
+
+#main .main_left h3
+{
+padding-bottom:20px;
+padding-left:50px;
+color:#C9E1FA;
+font-size:18px;
+}
+
+
+
+#main .main_right
+{
+padding-left:0px;
+height:auto;
+width:458px;
+background-image:url(main_body.png);
+background-repeat:repeat-y;
+color:#FFFFFF;
+padding-bottom:20px;
+float:left;
+}
+
+#main .main_right h2
+{
+font:Verdana, Arial, Helvetica, sans-serif;
+font-size:24px;
+padding-bottom:15px;
+}
+
+#main .main_right p
+{
+line-height:20px;
+}
 
 
 
 
 
 
+#page
+{
+  margin: 0 auto 0 auto; 
+  margin-top:35px;
+  display: block; 
+  height:auto;
+  position: relative; 
+  overflow: hidden; 
+  width: 921px;
+}
 
 
 
 
 
+#footer {
+display:block;
+width: 921px;
+height:74px;
+background: url(img/footer.png) no-repeat;
+text-align:left;
+font-size:9px;
+line-height:25px;
+}
 
+#footer p{
+text-align:left;
+}
 
+#footer, #footer a, #footer a:visited{
+color: #FFFFFF;
+margin-left: 186px;
+}
 
-
-
-
-
-
-
-
-
+#footer a:hover{
+text-decoration:none;
+color:#C9E1FA;
+}
 
